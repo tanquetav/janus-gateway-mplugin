@@ -10,7 +10,7 @@ LIBS = $(shell pkg-config --libs glib-2.0) $(shell pkg-config --libs libavformat
 
 confdir = $(exec_prefix)/etc/janus
 libdir = $(exec_prefix)/lib/janus/plugins
-conf_DATA = conf/janus_audiobridge2.cfg.sample
+conf_DATA = conf/janus.plugin.audiobridge2.cfg.sample
 
 ##
 # Configuration
