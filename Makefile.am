@@ -1,5 +1,5 @@
 ACLOCAL_AMFLAGS = -I m4
-JANUS_PATH=/opt/janus
+JANUS_PATH=$(exec_prefix)
 CFLAGS = $(shell pkg-config --cflags glib-2.0) -I$(JANUS_PATH)/include/janus $(shell pkg-config --cflags libavformat libavutil libswscale) 
 CXXFLAGS = $(CFLAGS)
 lib_LTLIBRARIES = libjanus_audiobridge2.la
